@@ -29,7 +29,7 @@ function addTomahawkTrackLink(node, artist, title) {
 }
 
 function addSpotifyTrackLink(node, artist, title) {
-	var query = 'artist:"' + artist + '" track:"' + title + '"';
+	var query = 'artist="' + artist + '" title="' + title + '"';
 
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", "http://ws.spotify.com/search/1/track.json" + buildQueryString({ q: query }), true);
@@ -40,7 +40,7 @@ function addSpotifyTrackLink(node, artist, title) {
 
 			var object = document.createElement("object");
 			object.setAttribute("type", "text/html");
-			object.setAttribute("data", "https://embed.spotify.com/" + buildQueryString({ uri: data.tracks[0].href }));
+			object.setAttribute("data", "http://toma.hk/embed.php" + buildQueryString({ uri: data.tracks[0].href }));
 			object.style.width = "300px";
 			object.style.height = "80px";
 			object.style.margin = "10px 0";
