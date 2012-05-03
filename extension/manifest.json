@@ -1,7 +1,7 @@
 {
-  "name": "RDFaudio",
+  "name": "TomahawkRDFaudio",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 1,
   "description": "Add audio resolver/player links to HTML track lists marked up with RDFa",
   "content_scripts": [
     {
