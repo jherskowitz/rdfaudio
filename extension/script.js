@@ -23,7 +23,7 @@ function addTomahawkTrackLink(node, artist, title) {
 	var link = document.createElement("a");
 	link.href = "tomahawk://open/track" + buildQueryString({ artist: artist, title: title });
 	link.innerHTML = "▶";
-	link.style.background = "url(http://www.tomahawk-player.org/sites/default/files/favicon.ico) no-repeat right center";
+	link.style.background = "urlhttps://img.skitch.com/20120503-cm8han4kgre9iwhjprpdmjfsap.jpg) no-repeat right center";
 	link.style.paddingRight = "20px";
 	node.appendChild(link);
 }
