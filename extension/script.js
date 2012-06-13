@@ -24,7 +24,7 @@ function addTomahawkTrackLink(node, artist, title) {
 	//link.href = "tomahawk://open/track" + buildQueryString({ artist: artist, title: title });
 	link.href = "http://toma.hk/" + buildQueryString({ artist: artist, title: title });
 	link.innerHTML = "▶";
-	link.style.background = "url(http://www.tomahawk-player.org/sites/default/files/favicon.ico) no-repeat right center";
+	link.style.background = "url(http://www.tomahawk-player.org/assets/ico/favicon.ico) no-repeat right center";
 	link.style.paddingRight = "20px";
 
 	link.addEventListener("click", openNewWindow, true);
